@@ -18,6 +18,18 @@ body {
   color: #402e46;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container, .hero-section, .featured-section {
+  max-width: 90%;
+  padding: 1rem;
+  margin: 5rem auto 0 auto;
+}
+
 .header {
   padding: 1.6rem 2.4rem;
   margin-top: 2rem;
@@ -64,5 +76,68 @@ body {
 .header .icon {
   font-size: 3rem;
   color: #402e46;
+}
+
+.hero-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-section .text-box {
+  padding: 0 5rem;
+  margin-bottom: 3.2rem;
+}
+
+.hero-section h1 {
+  font-size: 7.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero-section .img-box {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.hero-section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40rem;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+  width: 100%;
+}
+
+.featured-section {
+  margin-top: 9.6rem;
+}
+
+.featured-section p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #858585;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.featured-section .img-box {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured-section img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  height: 8.5rem;
+  opacity: 40%;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

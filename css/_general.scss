@@ -71,3 +71,13 @@ body {
   font-family: "Cormorant", serif;
   color: $black-color;
 }
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 90%;
+  padding: 1rem;
+  margin: 5rem auto 0 auto;
+}
