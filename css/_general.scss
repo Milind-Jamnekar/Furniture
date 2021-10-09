@@ -3,11 +3,6 @@
 //     10 / 12 / 14 / 16 / 18 / 20
 //     / 24 / 30 / 36 / 44 / 52
 //     / 62 / 74 / 86 / 98
-$very-small: 1.4rem;
-$small: 1.6rem;
-$normal: 1.8rem;
-$big: 2rem;
-$very-big: 2.4rem;
 
 // Font weights
 // default: 400
@@ -43,6 +38,8 @@ $bold: 700;
 // - Greys:
 // #555
 
+$primary: #db7125;
+
 // 3. ---- Shadows ----
 
 // 4. ---- Border Radius ----
@@ -53,8 +50,24 @@ $bold: 700;
 // 2 / 4 / 8 / 12 / 16 / 24 / 32 /
 //  48 / 64 / 80 / 96 / 128
 
-$font-size: 2rem;
+$black-color: #402e46;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   // makes 1rem = 10px
   font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Cormorant", serif;
+  color: $black-color;
 }

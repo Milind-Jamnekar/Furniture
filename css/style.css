@@ -1,4 +1,68 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  font-family: "Cormorant", serif;
+  color: #402e46;
+}
+
+.header {
+  padding: 1.6rem 2.4rem;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header a .logo-title {
+  font-size: 3.6rem;
+  color: #db7125;
+  font-weight: 700;
+}
+
+.header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+}
+
+.header ul li {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.header .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.header .icon {
+  font-size: 3rem;
+  color: #402e46;
 }
 /*# sourceMappingURL=style.css.map */
